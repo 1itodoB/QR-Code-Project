@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WhatsApp QR Code</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+</head>
+<body>
+    <div style="width: 50%; margin: auto; text-align: center;" >
+    <h2>Scan this QR Code to Chat on WhatsApp</h2>
+    <div>
+        <img src="images/frame.png" id="qrcode" >
+    </div>
+    </div>
+    <script>
+        var phoneNumber = "08117717975"; // Replace with your number
+        var whatsappLink = "https://wa.link/hv4zqw" + phoneNumber;
+
+        new QRCode(document.getElementById("qrcode"), whatsappLink);
+    </script>
+</body>
+</html>
